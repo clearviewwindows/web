@@ -1,0 +1,264 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .header .logo {
+    font-size: 1.8rem;
+    color: #336699;
+    font-weight: 700;
+  }
+  
+  .header .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .header .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .header .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .header .nav-links a:hover {
+    color: #336699;
+  }
+  
+  .header .cta {
+    background-color: #336699;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .header .cta:hover {
+    background-color: #274b78;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #336699;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-btn {
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-btn:hover {
+    background-color: #d799a8;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .about h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #336699;
+    margin-bottom: 1rem;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 2rem 1rem;
+    background-color: #fdf4e3;
+    text-align: center;
+  }
+  
+  .services h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #336699;
+    margin-bottom: 1rem;
+  }
+  
+  .services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .service-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  
+  .service-card h4 {
+    font-size: 1.2rem;
+    color: #336699;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Booking Form Styling */
+.booking-form {
+    background: #fdf4e3;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .booking-form h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #336699;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #336699;
+    outline: none;
+  }
+  
+  button.cta {
+    background: #336699;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: center;
+  }
+  
+  button.cta:hover {
+    background: #274b78;
+  }
+  
+  /* Add subtle hover effect to options */
+  .form-group select:hover {
+    border-color: #274b78;
+  }
+  
+  /* Add small accent to recurring schedule checkbox */
+  .form-group input[type="checkbox"] + label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-group input[type="checkbox"] {
+    accent-color: #336699;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .booking-form {
+      padding: 1.5rem;
+    }
+  
+    button.cta {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  }
+  
