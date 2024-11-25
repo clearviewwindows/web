@@ -54,8 +54,8 @@
           <p>Make a lasting impression with sparkling business windows.</p>
         </div>
         <div class="service-card">
-          <h4>Repeat Scheduling</h4>
-          <p>Set it and forget it – we’ll keep your windows spotless year-round.</p>
+          <h4>Online Booking</h4>
+          <p>Book your next window cleaning session effortlessly with just a few clicks.</p>
         </div>
       </div>
     </div>
@@ -68,94 +68,122 @@
   </footer>
 
   <style>
-    /* About Page Specific Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #336699;
+      font-weight: 600;
+    }
+
     .hero {
       background-color: #336699;
       color: white;
       text-align: center;
       padding: 4rem 1rem;
-      margin-bottom: 2rem;
     }
 
     .hero-title {
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
       font-weight: 700;
       margin-bottom: 1rem;
     }
 
     .hero-subtitle {
-      font-size: 1.2rem;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
       font-weight: 400;
       margin-bottom: 2rem;
     }
 
-    .about {
-      padding: 2rem 1rem;
-    }
-
-    .about h3 {
-      font-size: 1.8rem;
-      font-weight: 700;
+    .about h3,
+    .services h3 {
+      font-size: clamp(1.5rem, 3vw, 1.8rem);
       color: #336699;
-      margin-bottom: 1rem;
       text-align: center;
+      margin-bottom: 1rem;
     }
 
     .about p {
-      color: #555;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
       line-height: 1.6;
+      text-align: justify;
       margin-bottom: 1rem;
     }
 
     .about-image {
-      display: block;
-      max-width: 100%;
+      width: 100%;
       height: auto;
-      margin: 1.5rem auto 0;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .services {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    .services h3 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #336699;
-      margin-bottom: 1rem;
     }
 
     .services-grid {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
-      justify-content: center;
     }
 
     .service-card {
-      background-color: #f4f4f4;
       padding: 1rem;
+      background-color: #f4f4f4;
       border-radius: 10px;
-      width: 300px;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .cta, .hero-btn {
+    .service-card > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .service-card > ul > li {
+    display: flex;
+    width:20%; //for 5 cards in one row
+    padding: 8px; //adds the space between cards
+}
+
+    .cta,
+    .hero-btn {
+      display: inline-block;
       background-color: #336699;
       color: white;
       padding: 0.8rem 2rem;
       border-radius: 30px;
-      font-weight: 600;
       text-decoration: none;
+      font-weight: 600;
       transition: background-color 0.3s;
     }
 
-    .cta:hover, .hero-btn:hover {
+    .cta:hover,
+    .hero-btn:hover {
       background-color: #274b78;
+    }
+
+    footer p {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </body>
